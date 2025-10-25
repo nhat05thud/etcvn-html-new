@@ -1,5 +1,6 @@
 (function ($) {
     $(function () {
+        myfuncload();
         initOwlCarousel();
         nonBreakSpaceP();
 
@@ -24,9 +25,19 @@
     });
 })(jQuery);
 
+function myfuncload(){
+    $(".panel-a").mobilepanel();
+    $("#main-menu .main-nav ul > li").clone().appendTo($("#menuMobiles"));
+    $("#main-menu .dropdown-nav > ul > li").clone().appendTo($("#menuMobiles"));
+    $("#menuMobiles input").remove();
+    $("#menuMobiles > li > a").append('<span class="fa fa-chevron-circle-right iconar"></span>');
+    $("#menuMobiles li li a").append('<span class="fa fa-angle-right iconl"></span>');
+    $("#menu > li:last-child").addClass("last");
+    $("#menu > li:first-child").addClass("fisrt");
+}
+
 function initOwlCarousel() {
     $(".home-news-carousel").owlCarousel({
-        margin: 30,
         slideSpeed: 2000,
         nav: true,
         autoplay: true,
@@ -41,15 +52,20 @@ function initOwlCarousel() {
                 items: 1
             },
             768: {
-                items: 4
+                items: 2,
+                margin: 30
             },
             992: {
-                items: 2
+                items: 2,
+                margin: 10
+            },
+            1280: {
+                items: 2,
+                margin: 30
             }
         }
     });
     $(".home-document-carousel").owlCarousel({
-        margin: 30,
         slideSpeed: 2000,
         nav: true,
         autoplay: true,
@@ -64,10 +80,16 @@ function initOwlCarousel() {
                 items: 1
             },
             768: {
-                items: 4
+                items: 2,
+                margin: 30
             },
             992: {
-                items: 2
+                items: 2,
+                margin: 10
+            },
+            1280: {
+                items: 2,
+                margin: 30
             }
         }
     });
@@ -87,15 +109,17 @@ function initOwlCarousel() {
                 items: 2
             },
             768: {
-                items: 3
+                items: 2
             },
             992: {
+                items: 3
+            },
+            1280: {
                 items: 4
             }
         }
     });
 }
-
 
 function nonBreakSpaceP() {
     var item = $('.wrap-content').find('p');

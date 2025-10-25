@@ -10,436 +10,459 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 <body>
-    <header id="main-header">
-        <div class="top-head">
-            <div class="container">
-                <div class="flex items-end justify-between">
-                    <div class="top-head-left">
-                        <a href="#">
-                            <img src="images/logo.png" alt="Logo">
-                        </a>
-                    </div>
-                    <div class="top-head-right flex">
-                        <div class="info">
-                            <span class="phone">(028) 3724 2181 (ext. 1415)</span>
-                            <span class="mail">ttkt@vnuhcm.edu.vn</span>
-                        </div>
-                        <div class="search">
-                            <img src="images/search.png" alt="search">
-                            <form action="" method="get">
-                                <input type="text" placeholder="Tìm kiếm..." />
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <nav id="main-menu">
-            <div class="container">
-                <div class="flex justify-between items-center">
-                    <div class="main-nav">
-                        <ul class="reset-liststyle flex">
-                            <li><a href="#">Trang chủ</a></li>
-                            <li><a href="#">Bảo đảm chất lượng</a></li>
-                            <li><a href="#">Đánh giá năng lực</a></li>
-                            <li><a href="#">VNU-EPT</a></li>
-                            <li><a href="#">Đánh giá MOOCs</a></li>
-                        </ul>
-                    </div>
-                    <div class="dropdown-nav">
-                        <ul class="reset-liststyle">
-                            <li>
-                                <a class="flex items-center" href="#">
-                                    Về trung tâm
-                                    <svg style="margin-left: 5px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                                        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
-                                    </svg>
+    <div id="wrapper">
+        <div id="wrapper-in">
+            <header id="main-header">
+                <div class="top-head">
+                    <div class="container">
+                        <div class="flex items-end justify-between">
+                            <div class="top-head-left">
+                                <a href="#">
+                                    <img src="images/logo.png" alt="Logo">
                                 </a>
-                                <ul>
-                                    <li><a href="#">Thông tin chung</a></li>
-                                    <li><a href="#">Tổ chức</a></li>
-                                    <li><a href="#">Nhân sự</a></li>
-                                    <li><a href="#">Đối tác</a></li>
-                                    <li><a href="#">Dịch vụ</a></li>
-                                    <li><a href="#">Liên hệ</a></li>
-                                    <li><a href="#">Liên kết website</a></li>
+                            </div>
+                            <div class="top-head-right flex">
+                                <div class="info">
+                                    <span class="phone">(028) 3724 2181 (ext. 1415)</span>
+                                    <span class="mail">ttkt@vnuhcm.edu.vn</span>
+                                </div>
+                                <div class="search">
+                                    <img src="images/search.png" alt="search">
+                                    <form action="" method="get">
+                                        <input type="text" placeholder="Tìm kiếm..." />
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav id="main-menu">
+                    <div class="container">
+                        <a class="panel-a menu-mo" href="#menumobile" data-position="true" data-type="false">
+                            <svg height="1792" viewBox="0 0 1792 1792" width="1792" xmlns="http://www.w3.org/2000/svg"><path d="M1664 1344v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45z"/></svg>
+                            Menu
+                        </a>
+                        <div class="flex justify-between items-center">
+                            <div class="main-nav">
+                                <ul class="reset-liststyle flex">
+                                    <li><a href="#">Trang chủ</a></li>
+                                    <li><a href="#">Bảo đảm chất lượng</a></li>
+                                    <li><a href="#">Đánh giá năng lực</a></li>
+                                    <li><a href="#">VNU-EPT</a></li>
+                                    <li><a href="#">Đánh giá MOOCs</a></li>
                                 </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <main id="main-body">
-        <div class="home-banner">
-            <img class="w-full" src="images/banner.jpg" alt="home banner">
-            <div class="container relative" style="margin-bottom: 250px;"> <!-- tạm để style inline -> script -->
-                <div class="main-category flex flex-wrap items-end">
-                    <div class="item">
-                        <div class="wrap-item text-center">
-                            <img src="images/cate-1.png" alt="Cate 1">
-                            <h2 class="font-condensed">Bảo đảm chất lượng</h2>
-                            <p class="text-justify">Tổ chức các kỳ thi đánh giá năng lực, chuẩn đầu ra và các kỳ thi chứng chỉ Quốc tế với quy trình chuyên nghiệp, đảm bảo tính khách quan và chính xác.</p>
-                            <a href="#" class="read-more">Xem thêm <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#df2232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-4 h-4 text-gray-400"><path d="m9 18 6-6-6-6"></path></svg></a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="wrap-item text-center">
-                            <img src="images/cate-2.png" alt="Cate 2">
-                            <h2 class="font-condensed">Đánh giá năng lực</h2>
-                            <p class="text-justify">Triển khai các hoạt động đánh giá chất lượng đào tạo, phân tích dữ liệu và đưa ra các báo cáo đánh giá chuyên sâu giúp cải tiến chất lượng giáo dục.</p>
-                            <a href="#" class="read-more">Xem thêm <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#df2232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-4 h-4 text-gray-400"><path d="m9 18 6-6-6-6"></path></svg></a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="wrap-item text-center">
-                            <img src="images/cate-3.png" alt="Cate 3">
-                            <h2 class="font-condensed">VNU-EPT</h2>
-                            <p class="text-justify">Cung cấp dịch vụ tư vấn về đánh giá chất lượng giáo dục, xây dựng hệ thống đảm bảo chất lượng và phát triển chương trình đào tạo theo chuẩn Quốc tế.</p>
-                            <a href="#" class="read-more">Xem thêm <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#df2232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-4 h-4 text-gray-400"><path d="m9 18 6-6-6-6"></path></svg></a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="wrap-item text-center">
-                            <img src="images/cate-4.png" alt="Cate 4">
-                            <h2 class="font-condensed">Đánh giá MOOCs</h2>
-                            <p class="text-justify">Thực hiện các nghiên cứu về phương pháp đánh giá hiện đại, phát triển công cụ đo lường và đánh giá, ứng dụng công nghệ vào khảo thí và đánh giá.</p>
-                            <a href="#" class="read-more">Xem thêm <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#df2232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-4 h-4 text-gray-400"><path d="m9 18 6-6-6-6"></path></svg></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="flex wrap-w">
-                <div class="w-6/12 w-pad">
-                    <div class="module-header">
-                        <h2 class="font-condensed">Tin tức</h2>
-                    </div>
-                    <div class="module-body">
-                        <div class="home-news-carousel owl-carousel">
-                            <div class="news-wrap">
-                                <div class="main-item">
-                                    <a href="#" class="img"><img src="https://placehold.co/278x170" alt=""></a>
-                                    <div class="content">
-                                        <span class="date">12/07/2025</span>
-                                        <h3 class="font-condensed"><a href="#">ĐHQG-HCM là mô hình tiêu biểu trong thực hiện nghị quyết số 57-NQ/TW</a></h3>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <div class="item flex">
-                                        <div class="img"><a href="#"><img src="https://placehold.co/71x50" alt=""></a></div>
-                                        <div class="content">
-                                            <h3 class="font-condensed"><a href="#">Kỳ thi VNU-EPT lần thứ 249 ngày 21/06/2025</a></h3>
-                                            <span class="date">11/07/2025</span>
-                                        </div>
-                                    </div>
-                                    <div class="item flex">
-                                        <div class="img"><a href="#"><img src="https://placehold.co/71x50" alt=""></a></div>
-                                        <div class="content">
-                                            <h3 class="font-condensed"><a href="#">Kỳ thi VNU-EPT lần thứ 249 ngày 21/06/2025</a></h3>
-                                            <span class="date">11/07/2025</span>
-                                        </div>
-                                    </div>
-                                    <div class="item flex">
-                                        <div class="img"><a href="#"><img src="https://placehold.co/71x50" alt=""></a></div>
-                                        <div class="content">
-                                            <h3 class="font-condensed"><a href="#">Kỳ thi VNU-EPT lần thứ 249 ngày 21/06/2025</a></h3>
-                                            <span class="date">11/07/2025</span>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
-                            <div class="news-wrap">
-                                <div class="main-item">
-                                    <a href="#" class="img"><img src="https://placehold.co/278x170" alt=""></a>
-                                    <div class="content">
-                                        <span class="date">12/07/2025</span>
-                                        <h3 class="font-condensed"><a href="#">ĐHQG-HCM là mô hình tiêu biểu trong thực hiện nghị quyết số 57-NQ/TW</a></h3>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <div class="item flex">
-                                        <div class="img"><a href="#"><img src="https://placehold.co/71x50" alt=""></a></div>
-                                        <div class="content">
-                                            <h3 class="font-condensed"><a href="#">Kỳ thi VNU-EPT lần thứ 249 ngày 21/06/2025</a></h3>
-                                            <span class="date">11/07/2025</span>
-                                        </div>
-                                    </div>
-                                    <div class="item flex">
-                                        <div class="img"><a href="#"><img src="https://placehold.co/71x50" alt=""></a></div>
-                                        <div class="content">
-                                            <h3 class="font-condensed"><a href="#">Kỳ thi VNU-EPT lần thứ 249 ngày 21/06/2025</a></h3>
-                                            <span class="date">11/07/2025</span>
-                                        </div>
-                                    </div>
-                                    <div class="item flex">
-                                        <div class="img"><a href="#"><img src="https://placehold.co/71x50" alt=""></a></div>
-                                        <div class="content">
-                                            <h3 class="font-condensed"><a href="#">Kỳ thi VNU-EPT lần thứ 249 ngày 21/06/2025</a></h3>
-                                            <span class="date">11/07/2025</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="news-wrap">
-                                <div class="main-item">
-                                    <a href="#" class="img"><img src="https://placehold.co/278x170" alt=""></a>
-                                    <div class="content">
-                                        <span class="date">12/07/2025</span>
-                                        <h3 class="font-condensed"><a href="#">ĐHQG-HCM là mô hình tiêu biểu trong thực hiện nghị quyết số 57-NQ/TW</a></h3>
-                                    </div>
-                                </div>
-                                <div class="content">
-                                    <div class="item flex">
-                                        <div class="img"><a href="#"><img src="https://placehold.co/71x50" alt=""></a></div>
-                                        <div class="content">
-                                            <h3 class="font-condensed"><a href="#">Kỳ thi VNU-EPT lần thứ 249 ngày 21/06/2025</a></h3>
-                                            <span class="date">11/07/2025</span>
-                                        </div>
-                                    </div>
-                                    <div class="item flex">
-                                        <div class="img"><a href="#"><img src="https://placehold.co/71x50" alt=""></a></div>
-                                        <div class="content">
-                                            <h3 class="font-condensed"><a href="#">Kỳ thi VNU-EPT lần thứ 249 ngày 21/06/2025</a></h3>
-                                            <span class="date">11/07/2025</span>
-                                        </div>
-                                    </div>
-                                    <div class="item flex">
-                                        <div class="img"><a href="#"><img src="https://placehold.co/71x50" alt=""></a></div>
-                                        <div class="content">
-                                            <h3 class="font-condensed"><a href="#">Kỳ thi VNU-EPT lần thứ 249 ngày 21/06/2025</a></h3>
-                                            <span class="date">11/07/2025</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="w-6/12 w-pad">
-                    <div class="module-header">
-                        <h2 class="font-condensed">Tài nguyên số</h2>
-                    </div>
-                    <div class="module-body">
-                        <div class="home-document-carousel owl-carousel">
-                            <div class="document-wrap">
-                                <div class="main-item">
-                                    <a href="#" class="img"><img src="https://placehold.co/278x170" alt=""></a>
-                                    <div class="content">
-                                        <span class="type">Tài liệu hướng dẫn</span>
-                                        <h3 class="font-condensed"><a href="#">Tài liệu hướng dẫn ôn tập VNU-EPT 2025</a></h3>
-                                        <div class="desc text-justify">
-                                            <p>Bên cạnh bộ tài liệu hướng dẫn ôn tập kỳ thi VNU-EPT của Đại học Quốc gia biên soanjm người học có thể tìm các nguồn tài liệu luyện thi VNU-EPT dưới đây để hoàn thiện các kỹ năng nghe, nói, đọc, viết.</p>
-                                            <p>Nghe và đọc cũng là một trong những kỹ năng quan trọng quyết định rất nhiều đến kết quả bài thi VNU-EPT. Tuy nhiên chỉ ôn thi trong sách và giáo trình liệu có đủ để bạn hoàn thiện các kỹ năng này? Nếu bạn vẫn đang tìm tài liệu luyện thi VNU-EPT để cải thiện kỹ năng...</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="document-wrap">
-                                <div class="main-item">
-                                    <a href="#" class="img"><img src="https://placehold.co/278x170" alt=""></a>
-                                    <div class="content">
-                                        <span class="type">Tài liệu hướng dẫn</span>
-                                        <h3 class="font-condensed"><a href="#">Tài liệu hướng dẫn ôn tập VNU-EPT 2025</a></h3>
-                                        <div class="desc text-justify">
-                                            <p>Bên cạnh bộ tài liệu hướng dẫn ôn tập kỳ thi VNU-EPT của Đại học Quốc gia biên soanjm người học có thể tìm các nguồn tài liệu luyện thi VNU-EPT dưới đây để hoàn thiện các kỹ năng nghe, nói, đọc, viết.</p>
-                                            <p>Nghe và đọc cũng là một trong những kỹ năng quan trọng quyết định rất nhiều đến kết quả bài thi VNU-EPT. Tuy nhiên chỉ ôn thi trong sách và giáo trình liệu có đủ để bạn hoàn thiện các kỹ năng này? Nếu bạn vẫn đang tìm tài liệu luyện thi VNU-EPT để cải thiện kỹ năng...</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="document-wrap">
-                                <div class="main-item">
-                                    <a href="#" class="img"><img src="https://placehold.co/278x170" alt=""></a>
-                                    <div class="content">
-                                        <span class="type">Tài liệu hướng dẫn</span>
-                                        <h3 class="font-condensed"><a href="#">Tài liệu hướng dẫn ôn tập VNU-EPT 2025</a></h3>
-                                        <div class="desc text-justify">
-                                            <p>Bên cạnh bộ tài liệu hướng dẫn ôn tập kỳ thi VNU-EPT của Đại học Quốc gia biên soanjm người học có thể tìm các nguồn tài liệu luyện thi VNU-EPT dưới đây để hoàn thiện các kỹ năng nghe, nói, đọc, viết.</p>
-                                            <p>Nghe và đọc cũng là một trong những kỹ năng quan trọng quyết định rất nhiều đến kết quả bài thi VNU-EPT. Tuy nhiên chỉ ôn thi trong sách và giáo trình liệu có đủ để bạn hoàn thiện các kỹ năng này? Nếu bạn vẫn đang tìm tài liệu luyện thi VNU-EPT để cải thiện kỹ năng...</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="search-wrap section-margin">
-            <div class="container">
-                <h2 class="text-center font-condensed font-w-bold mgb-30">Tìm kiếm thông tin</h2>
-                <div class="flex items-center justify-center">
-                    <div class="search_box">
-                        <form class="flex flex-wrap" action="" method="get">
-                            <div class="dropdown">
-                                <div class="default_option">Tất cả danh mục</div>  
+                            <div class="dropdown-nav">
                                 <ul class="reset-liststyle">
-                                    <li>Tất cả danh mục</li>
-                                    <li>Đánh giá năng lực</li>
-                                    <li>Bảo đảm chất lượng</li>
-                                    <li>Xếp hạng</li>
-                                    <li>VNU-EPT</li>
+                                    <li>
+                                        <a class="flex items-center" href="#">
+                                            Về trung tâm
+                                            <svg style="margin-left: 5px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                                            </svg>
+                                        </a>
+                                        <ul>
+                                            <li><a href="#">Thông tin chung</a></li>
+                                            <li><a href="#">Tổ chức</a></li>
+                                            <li><a href="#">Nhân sự</a></li>
+                                            <li><a href="#">Đối tác</a></li>
+                                            <li><a href="#">Dịch vụ</a></li>
+                                            <li><a href="#">Liên hệ</a></li>
+                                            <li><a href="#">Liên kết website</a></li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </div>
-                            <div class="search_field">
-                                <input type="text" class="input" placeholder="Nhập từ khóa tìm kiếm....">
-                            </div>
-                            <div class="search_button">
-                                <button type="submit"><img src="images/search.png"></button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="about-wrap section-margin">
-            <div class="container">
-                <div class="flex wrap-w">
-                    <div class="w-6/12 w-pad">
-                        <div class="module-header">
-                            <h2 class="font-condensed">Về trung tâm</h2>
                         </div>
-                        <div class="module-body">
-                            <div class="desc text-justify mgb-30">
-                                <p>Trung tâm Khảo thí và Đánh giá Chất lượng Đào tạo (Trung tâm) được thành lập năm 1999, là đơn vị chuyên trách về công tác khảo thí, đánh giá và đảm bảo chất lượng giáo dục.</p>
-                                <p>Với đội ngũ chuyên gia giàu kinh nghiệm và cơ sở vật chất hiện đại, Trung tâm đã trở thành đơn vị uy tín hàng đầu trong lĩnh vực khảo thí và đánh giá chất lượng đào tạo tại Việt Nam.</p>
+                    </div>
+                </nav>
+            </header>
+            <main id="main-body">
+                <div class="home-banner">
+                    <img class="w-full" src="images/banner.jpg" alt="home banner">
+                    <div class="container relative" style="margin-bottom: 250px;"> <!-- tạm để style inline -> script -->
+                        <div class="main-category flex flex-wrap items-end">
+                            <div class="item">
+                                <div class="wrap-item text-center">
+                                    <img src="images/cate-1.png" alt="Cate 1">
+                                    <h2 class="font-condensed">Bảo đảm chất lượng</h2>
+                                    <p class="text-justify">Tổ chức các kỳ thi đánh giá năng lực, chuẩn đầu ra và các kỳ thi chứng chỉ Quốc tế với quy trình chuyên nghiệp, đảm bảo tính khách quan và chính xác.</p>
+                                    <a href="#" class="read-more">Xem thêm <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#df2232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-4 h-4 text-gray-400"><path d="m9 18 6-6-6-6"></path></svg></a>
+                                </div>
                             </div>
-                            <div class="about-showcase flex flex-wrap">
-                                <div class="item flex flex-wrap items-center">
-                                    <div class="img">
-                                        <img src="images/ab-1.png" alt="">
-                                    </div>
-                                    <div class="content">
-                                        <h4>50+</h4>
-                                        <p>Chuyên gia</p>
-                                    </div>
+                            <div class="item">
+                                <div class="wrap-item text-center">
+                                    <img src="images/cate-2.png" alt="Cate 2">
+                                    <h2 class="font-condensed">Đánh giá năng lực</h2>
+                                    <p class="text-justify">Triển khai các hoạt động đánh giá chất lượng đào tạo, phân tích dữ liệu và đưa ra các báo cáo đánh giá chuyên sâu giúp cải tiến chất lượng giáo dục.</p>
+                                    <a href="#" class="read-more">Xem thêm <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#df2232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-4 h-4 text-gray-400"><path d="m9 18 6-6-6-6"></path></svg></a>
                                 </div>
-                                <div class="item flex flex-wrap items-center">
-                                    <div class="img">
-                                        <img src="images/ab-2.png" alt="">
-                                    </div>
-                                    <div class="content">
-                                        <h4>150+</h4>
-                                        <p>Đối tác trong & ngoài nước</p>
-                                    </div>
+                            </div>
+                            <div class="item">
+                                <div class="wrap-item text-center">
+                                    <img src="images/cate-3.png" alt="Cate 3">
+                                    <h2 class="font-condensed">VNU-EPT</h2>
+                                    <p class="text-justify">Cung cấp dịch vụ tư vấn về đánh giá chất lượng giáo dục, xây dựng hệ thống đảm bảo chất lượng và phát triển chương trình đào tạo theo chuẩn Quốc tế.</p>
+                                    <a href="#" class="read-more">Xem thêm <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#df2232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-4 h-4 text-gray-400"><path d="m9 18 6-6-6-6"></path></svg></a>
                                 </div>
-                                <div class="item flex flex-wrap items-center">
-                                    <div class="img">
-                                        <img src="images/ab-3.png" alt="">
-                                    </div>
-                                    <div class="content">
-                                        <h4>500+</h4>
-                                        <p>Kỳ thi tổ chức</p>
-                                    </div>
-                                </div>
-                                <div class="item flex flex-wrap items-center">
-                                    <div class="img">
-                                        <img src="images/ab-4.png" alt="">
-                                    </div>
-                                    <div class="content">
-                                        <h4>200.000+</h4>
-                                        <p>Thí sinh tham gia kỳ thi</p>
-                                    </div>
+                            </div>
+                            <div class="item">
+                                <div class="wrap-item text-center">
+                                    <img src="images/cate-4.png" alt="Cate 4">
+                                    <h2 class="font-condensed">Đánh giá MOOCs</h2>
+                                    <p class="text-justify">Thực hiện các nghiên cứu về phương pháp đánh giá hiện đại, phát triển công cụ đo lường và đánh giá, ứng dụng công nghệ vào khảo thí và đánh giá.</p>
+                                    <a href="#" class="read-more">Xem thêm <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#df2232" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right w-4 h-4 text-gray-400"><path d="m9 18 6-6-6-6"></path></svg></a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="w-6/12 w-pad">
-                        <div class="about-img">
-                            <img src="images/about.png" alt="">
+                </div>
+                <div class="container">
+                    <div class="home-news">
+                        <div class="flex wrap-w">
+                            <div class="w-6/12 w-pad">
+                                <div class="module-header">
+                                    <h2 class="font-condensed">Tin tức</h2>
+                                </div>
+                                <div class="module-body">
+                                    <div class="home-news-carousel owl-carousel">
+                                        <div class="news-wrap">
+                                            <div class="main-item">
+                                                <a href="#" class="img"><img src="https://placehold.co/278x170" alt=""></a>
+                                                <div class="content">
+                                                    <span class="date">12/07/2025</span>
+                                                    <h3 class="font-condensed"><a href="#">ĐHQG-HCM là mô hình tiêu biểu trong thực hiện nghị quyết số 57-NQ/TW</a></h3>
+                                                </div>
+                                            </div>
+                                            <div class="content">
+                                                <div class="item flex">
+                                                    <div class="img"><a href="#"><img src="https://placehold.co/71x50" alt=""></a></div>
+                                                    <div class="content">
+                                                        <h3 class="font-condensed"><a href="#">Kỳ thi VNU-EPT lần thứ 249 ngày 21/06/2025</a></h3>
+                                                        <span class="date">11/07/2025</span>
+                                                    </div>
+                                                </div>
+                                                <div class="item flex">
+                                                    <div class="img"><a href="#"><img src="https://placehold.co/71x50" alt=""></a></div>
+                                                    <div class="content">
+                                                        <h3 class="font-condensed"><a href="#">Kỳ thi VNU-EPT lần thứ 249 ngày 21/06/2025</a></h3>
+                                                        <span class="date">11/07/2025</span>
+                                                    </div>
+                                                </div>
+                                                <div class="item flex">
+                                                    <div class="img"><a href="#"><img src="https://placehold.co/71x50" alt=""></a></div>
+                                                    <div class="content">
+                                                        <h3 class="font-condensed"><a href="#">Kỳ thi VNU-EPT lần thứ 249 ngày 21/06/2025</a></h3>
+                                                        <span class="date">11/07/2025</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="news-wrap">
+                                            <div class="main-item">
+                                                <a href="#" class="img"><img src="https://placehold.co/278x170" alt=""></a>
+                                                <div class="content">
+                                                    <span class="date">12/07/2025</span>
+                                                    <h3 class="font-condensed"><a href="#">ĐHQG-HCM là mô hình tiêu biểu trong thực hiện nghị quyết số 57-NQ/TW</a></h3>
+                                                </div>
+                                            </div>
+                                            <div class="content">
+                                                <div class="item flex">
+                                                    <div class="img"><a href="#"><img src="https://placehold.co/71x50" alt=""></a></div>
+                                                    <div class="content">
+                                                        <h3 class="font-condensed"><a href="#">Kỳ thi VNU-EPT lần thứ 249 ngày 21/06/2025</a></h3>
+                                                        <span class="date">11/07/2025</span>
+                                                    </div>
+                                                </div>
+                                                <div class="item flex">
+                                                    <div class="img"><a href="#"><img src="https://placehold.co/71x50" alt=""></a></div>
+                                                    <div class="content">
+                                                        <h3 class="font-condensed"><a href="#">Kỳ thi VNU-EPT lần thứ 249 ngày 21/06/2025</a></h3>
+                                                        <span class="date">11/07/2025</span>
+                                                    </div>
+                                                </div>
+                                                <div class="item flex">
+                                                    <div class="img"><a href="#"><img src="https://placehold.co/71x50" alt=""></a></div>
+                                                    <div class="content">
+                                                        <h3 class="font-condensed"><a href="#">Kỳ thi VNU-EPT lần thứ 249 ngày 21/06/2025</a></h3>
+                                                        <span class="date">11/07/2025</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="news-wrap">
+                                            <div class="main-item">
+                                                <a href="#" class="img"><img src="https://placehold.co/278x170" alt=""></a>
+                                                <div class="content">
+                                                    <span class="date">12/07/2025</span>
+                                                    <h3 class="font-condensed"><a href="#">ĐHQG-HCM là mô hình tiêu biểu trong thực hiện nghị quyết số 57-NQ/TW</a></h3>
+                                                </div>
+                                            </div>
+                                            <div class="content">
+                                                <div class="item flex">
+                                                    <div class="img"><a href="#"><img src="https://placehold.co/71x50" alt=""></a></div>
+                                                    <div class="content">
+                                                        <h3 class="font-condensed"><a href="#">Kỳ thi VNU-EPT lần thứ 249 ngày 21/06/2025</a></h3>
+                                                        <span class="date">11/07/2025</span>
+                                                    </div>
+                                                </div>
+                                                <div class="item flex">
+                                                    <div class="img"><a href="#"><img src="https://placehold.co/71x50" alt=""></a></div>
+                                                    <div class="content">
+                                                        <h3 class="font-condensed"><a href="#">Kỳ thi VNU-EPT lần thứ 249 ngày 21/06/2025</a></h3>
+                                                        <span class="date">11/07/2025</span>
+                                                    </div>
+                                                </div>
+                                                <div class="item flex">
+                                                    <div class="img"><a href="#"><img src="https://placehold.co/71x50" alt=""></a></div>
+                                                    <div class="content">
+                                                        <h3 class="font-condensed"><a href="#">Kỳ thi VNU-EPT lần thứ 249 ngày 21/06/2025</a></h3>
+                                                        <span class="date">11/07/2025</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-6/12 w-pad">
+                                <div class="module-header">
+                                    <h2 class="font-condensed">Tài nguyên số</h2>
+                                </div>
+                                <div class="module-body">
+                                    <div class="home-document-carousel owl-carousel">
+                                        <div class="document-wrap">
+                                            <div class="main-item">
+                                                <a href="#" class="img"><img src="https://placehold.co/278x170" alt=""></a>
+                                                <div class="content">
+                                                    <span class="type">Tài liệu hướng dẫn</span>
+                                                    <h3 class="font-condensed"><a href="#">Tài liệu hướng dẫn ôn tập VNU-EPT 2025</a></h3>
+                                                    <div class="desc text-justify">
+                                                        <p>Bên cạnh bộ tài liệu hướng dẫn ôn tập kỳ thi VNU-EPT của Đại học Quốc gia biên soanjm người học có thể tìm các nguồn tài liệu luyện thi VNU-EPT dưới đây để hoàn thiện các kỹ năng nghe, nói, đọc, viết.</p>
+                                                        <p>Nghe và đọc cũng là một trong những kỹ năng quan trọng quyết định rất nhiều đến kết quả bài thi VNU-EPT. Tuy nhiên chỉ ôn thi trong sách và giáo trình liệu có đủ để bạn hoàn thiện các kỹ năng này? Nếu bạn vẫn đang tìm tài liệu luyện thi VNU-EPT để cải thiện kỹ năng...</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="document-wrap">
+                                            <div class="main-item">
+                                                <a href="#" class="img"><img src="https://placehold.co/278x170" alt=""></a>
+                                                <div class="content">
+                                                    <span class="type">Tài liệu hướng dẫn</span>
+                                                    <h3 class="font-condensed"><a href="#">Tài liệu hướng dẫn ôn tập VNU-EPT 2025</a></h3>
+                                                    <div class="desc text-justify">
+                                                        <p>Bên cạnh bộ tài liệu hướng dẫn ôn tập kỳ thi VNU-EPT của Đại học Quốc gia biên soanjm người học có thể tìm các nguồn tài liệu luyện thi VNU-EPT dưới đây để hoàn thiện các kỹ năng nghe, nói, đọc, viết.</p>
+                                                        <p>Nghe và đọc cũng là một trong những kỹ năng quan trọng quyết định rất nhiều đến kết quả bài thi VNU-EPT. Tuy nhiên chỉ ôn thi trong sách và giáo trình liệu có đủ để bạn hoàn thiện các kỹ năng này? Nếu bạn vẫn đang tìm tài liệu luyện thi VNU-EPT để cải thiện kỹ năng...</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="document-wrap">
+                                            <div class="main-item">
+                                                <a href="#" class="img"><img src="https://placehold.co/278x170" alt=""></a>
+                                                <div class="content">
+                                                    <span class="type">Tài liệu hướng dẫn</span>
+                                                    <h3 class="font-condensed"><a href="#">Tài liệu hướng dẫn ôn tập VNU-EPT 2025</a></h3>
+                                                    <div class="desc text-justify">
+                                                        <p>Bên cạnh bộ tài liệu hướng dẫn ôn tập kỳ thi VNU-EPT của Đại học Quốc gia biên soanjm người học có thể tìm các nguồn tài liệu luyện thi VNU-EPT dưới đây để hoàn thiện các kỹ năng nghe, nói, đọc, viết.</p>
+                                                        <p>Nghe và đọc cũng là một trong những kỹ năng quan trọng quyết định rất nhiều đến kết quả bài thi VNU-EPT. Tuy nhiên chỉ ôn thi trong sách và giáo trình liệu có đủ để bạn hoàn thiện các kỹ năng này? Nếu bạn vẫn đang tìm tài liệu luyện thi VNU-EPT để cải thiện kỹ năng...</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="partner-wrap">
-            <div class="container">
-                <h2 class="text-center font-condensed font-w-bold mgb-30">Đối tác của chúng tôi</h2>
-                <div class="partner-cate flex flex-wrap">
-                    <div class="item">
-                        <div class="item-wrap">
-                            <img src="images/p-1.png" alt="">
-                            <p>AUN-QA</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="item-wrap">
-                            <img src="images/p-1.png" alt="">
-                            <p>Qs World</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="item-wrap">
-                            <img src="images/p-2.png" alt="">
-                            <p>INQAAHE</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="item-wrap">
-                            <img src="images/p-3.png" alt="">
-                            <p>APQN</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="item-wrap">
-                            <img src="images/p-3.png" alt="">
-                            <p>APHERP</p>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="item-wrap">
-                            <img src="images/p-3.png" alt="">
-                            <p>Times Higher Education</p>
+                <div class="search-wrap section-margin">
+                    <div class="container">
+                        <h2 class="text-center font-condensed font-w-bold mgb-30">Tìm kiếm thông tin</h2>
+                        <div class="flex items-center justify-center">
+                            <div class="search_box">
+                                <form class="flex flex-wrap" action="" method="get">
+                                    <div class="dropdown">
+                                        <div class="default_option">Tất cả danh mục</div>  
+                                        <ul class="reset-liststyle">
+                                            <li>Tất cả danh mục</li>
+                                            <li>Đánh giá năng lực</li>
+                                            <li>Bảo đảm chất lượng</li>
+                                            <li>Xếp hạng</li>
+                                            <li>VNU-EPT</li>
+                                        </ul>
+                                    </div>
+                                    <div class="search_field">
+                                        <input type="text" class="input" placeholder="Nhập từ khóa tìm kiếm....">
+                                    </div>
+                                    <div class="search_button">
+                                        <button type="submit"><img src="images/search.png"></button>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </main>
-    <footer id="main-footer">
-        <div class="container">
-            <div class="flex wrap-w">
-                <div class="w-6/12 w-pad">
-                    <h1>TRUNG TÂM KHẢO THÍ & ĐÁNH GIÁ CHẤT LƯỢNG ĐÀO TẠO</h1>
-                    <span>Đơn vị uy tín hàng đầu trong lĩnh vực Khảo thí và Đánh giá Chất lượng Giáo dục.</span>
-                    <div class="mgb-30"></div>
-                    <ul class="reset-liststyle ul-address">
-                        <li>Phòng 403, Nhà điều hành ĐHQG-HCM, đường Võ Trường Toản, Khu phố 33, phường Linh Xuân, Thành phố Hồ Chí Minh.</li>
-                        <li>(028) 3724 2181 (ext. 1415)</li>
-                        <li>ttkt@vnuhcm.edu.vn</li>
-                        <li>www.cetqa.vnuhcm.edu.vn</li>
-                    </ul>
+                <div class="about-wrap section-margin">
+                    <div class="container">
+                        <div class="flex wrap-w">
+                            <div class="w-6/12 w-pad">
+                                <div class="module-header">
+                                    <h2 class="font-condensed">Về trung tâm</h2>
+                                </div>
+                                <div class="module-body">
+                                    <div class="desc text-justify mgb-30">
+                                        <p>Trung tâm Khảo thí và Đánh giá Chất lượng Đào tạo (Trung tâm) được thành lập năm 1999, là đơn vị chuyên trách về công tác khảo thí, đánh giá và đảm bảo chất lượng giáo dục.</p>
+                                        <p>Với đội ngũ chuyên gia giàu kinh nghiệm và cơ sở vật chất hiện đại, Trung tâm đã trở thành đơn vị uy tín hàng đầu trong lĩnh vực khảo thí và đánh giá chất lượng đào tạo tại Việt Nam.</p>
+                                    </div>
+                                    <div class="about-showcase flex flex-wrap">
+                                        <div class="item flex flex-wrap items-center">
+                                            <div class="img">
+                                                <img src="images/ab-1.png" alt="">
+                                            </div>
+                                            <div class="content">
+                                                <h4>50+</h4>
+                                                <p>Chuyên gia</p>
+                                            </div>
+                                        </div>
+                                        <div class="item flex flex-wrap items-center">
+                                            <div class="img">
+                                                <img src="images/ab-2.png" alt="">
+                                            </div>
+                                            <div class="content">
+                                                <h4>150+</h4>
+                                                <p>Đối tác trong & ngoài nước</p>
+                                            </div>
+                                        </div>
+                                        <div class="item flex flex-wrap items-center">
+                                            <div class="img">
+                                                <img src="images/ab-3.png" alt="">
+                                            </div>
+                                            <div class="content">
+                                                <h4>500+</h4>
+                                                <p>Kỳ thi tổ chức</p>
+                                            </div>
+                                        </div>
+                                        <div class="item flex flex-wrap items-center">
+                                            <div class="img">
+                                                <img src="images/ab-4.png" alt="">
+                                            </div>
+                                            <div class="content">
+                                                <h4>200.000+</h4>
+                                                <p>Thí sinh tham gia kỳ thi</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-6/12 w-pad">
+                                <div class="about-img">
+                                    <img src="images/about.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="w-6/12 w-pad">
-                    <div class="mgb-30"></div>
+                <div class="partner-wrap">
+                    <div class="container">
+                        <h2 class="text-center font-condensed font-w-bold mgb-30">Đối tác của chúng tôi</h2>
+                        <div class="partner-cate flex flex-wrap">
+                            <div class="item">
+                                <div class="item-wrap">
+                                    <img src="images/p-1.png" alt="">
+                                    <p>AUN-QA</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-wrap">
+                                    <img src="images/p-1.png" alt="">
+                                    <p>Qs World</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-wrap">
+                                    <img src="images/p-2.png" alt="">
+                                    <p>INQAAHE</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-wrap">
+                                    <img src="images/p-3.png" alt="">
+                                    <p>APQN</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-wrap">
+                                    <img src="images/p-3.png" alt="">
+                                    <p>APHERP</p>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-wrap">
+                                    <img src="images/p-3.png" alt="">
+                                    <p>Times Higher Education</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer id="main-footer">
+                <div class="container">
                     <div class="flex wrap-w">
-                        <div class="w-4/12 w-pad">
-                            <h4>Liên kết nhanh</h4>
-                            <ul class="reset-liststyle ul-list">
-                                <li><a href="#">ĐHQG-HCM</a></li>
-                                <li><a href="#">Thi đánh giá năng lực</a></li>
-                                <li><a href="#">VNU-EPT</a></li>
+                        <div class="w-6/12 w-pad">
+                            <h1>TRUNG TÂM KHẢO THÍ & ĐÁNH GIÁ CHẤT LƯỢNG ĐÀO TẠO</h1>
+                            <span>Đơn vị uy tín hàng đầu trong lĩnh vực Khảo thí và Đánh giá Chất lượng Giáo dục.</span>
+                            <div class="mgb-30"></div>
+                            <ul class="reset-liststyle ul-address">
+                                <li>Phòng 403, Nhà điều hành ĐHQG-HCM, đường Võ Trường Toản, Khu phố 33, phường Linh Xuân, Thành phố Hồ Chí Minh.</li>
+                                <li>(028) 3724 2181 (ext. 1415)</li>
+                                <li>ttkt@vnuhcm.edu.vn</li>
+                                <li>www.cetqa.vnuhcm.edu.vn</li>
                             </ul>
                         </div>
-                        <div class="w-8/12 w-pad">
-                            <h4>Dịch vụ</h4>
-                            <ul class="reset-liststyle ul-list">
-                                <li><a href="#">Tư vấn, tập huấn công tác khảo thí</a></li>
-                                <li><a href="#">Tư vấn, tập huấn bảo đảm chất lượng và xếp hạng</a></li>
-                                <li><a href="#">Tư vấn xây dựng chương trình đào tạo</a></li>
-                                <li><a href="#">Tư vấn đánh giá chuẩn đầu ra</a></li>
-                            </ul>
+                        <div class="w-6/12 w-pad">
+                            <div class="mgb-30"></div>
+                            <div class="flex wrap-w">
+                                <div class="w-4/12 w-pad">
+                                    <h4>Liên kết nhanh</h4>
+                                    <ul class="reset-liststyle ul-list">
+                                        <li><a href="#">ĐHQG-HCM</a></li>
+                                        <li><a href="#">Thi đánh giá năng lực</a></li>
+                                        <li><a href="#">VNU-EPT</a></li>
+                                    </ul>
+                                </div>
+                                <div class="w-8/12 w-pad">
+                                    <h4>Dịch vụ</h4>
+                                    <ul class="reset-liststyle ul-list">
+                                        <li><a href="#">Tư vấn, tập huấn công tác khảo thí</a></li>
+                                        <li><a href="#">Tư vấn, tập huấn bảo đảm chất lượng và xếp hạng</a></li>
+                                        <li><a href="#">Tư vấn xây dựng chương trình đào tạo</a></li>
+                                        <li><a href="#">Tư vấn đánh giá chuẩn đầu ra</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <p class="copyright text-center">© 2025 Bản quyền thuộc về Trung tâm Khảo thí và Đánh giá Chất lượng Đào tạo.</p>
+            </footer>
+        </div>
+        <!--menumobile-->
+        <div id="menumobile" class="mobile-panel mobilep-left">
+            <div class="menu-in">
+                <div class="menu-mobile">
+                    <div class="logo">
+                        <a href="#"><img class="w-full" src="images/logo.png" alt="Logo"></a>
+                    </div>
+                    <ul id="menuMobiles" class="menu-nav"></ul>
+                </div>
             </div>
         </div>
-        <p class="copyright text-center">© 2025 Bản quyền thuộc về Trung tâm Khảo thí và Đánh giá Chất lượng Đào tạo.</p>
-    </footer>
+        <!--menumobile-->
+    </div>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.panel.mobile.js"></script>
     <script src="js/site.js"></script>
 </body>
 </html>

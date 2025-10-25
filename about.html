@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,171 +10,204 @@
     <link rel="stylesheet" href="css/site.css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
+
 <body>
-    <header id="main-header">
-        <div class="top-head">
-            <div class="container">
-                <div class="flex items-end justify-between">
-                    <div class="top-head-left">
-                        <a href="#">
-                            <img src="images/logo.png" alt="Logo">
-                        </a>
-                    </div>
-                    <div class="top-head-right flex">
-                        <div class="info">
-                            <span class="phone">(028) 3724 2181 (ext. 1415)</span>
-                            <span class="mail">ttkt@vnuhcm.edu.vn</span>
-                        </div>
-                        <div class="search">
-                            <img src="images/search.png" alt="search">
-                            <form action="" method="get">
-                                <input type="text" placeholder="Tìm kiếm..." />
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <nav id="main-menu">
-            <div class="container">
-                <div class="flex justify-between items-center">
-                    <div class="main-nav">
-                        <ul class="reset-liststyle flex">
-                            <li><a href="#">Trang chủ</a></li>
-                            <li><a href="#">Bảo đảm chất lượng</a></li>
-                            <li><a href="#">Đánh giá năng lực</a></li>
-                            <li><a href="#">VNU-EPT</a></li>
-                            <li><a href="#">Đánh giá MOOCs</a></li>
-                        </ul>
-                    </div>
-                    <div class="dropdown-nav">
-                        <ul class="reset-liststyle">
-                            <li>
-                                <a class="flex items-center" href="#">
-                                    Về trung tâm
-                                    <svg style="margin-left: 5px;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
-                                        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
-                                    </svg>
+    <div id="wrapper">
+        <div id="wrapper-in">
+            <header id="main-header">
+                <div class="top-head">
+                    <div class="container">
+                        <div class="flex items-end justify-between">
+                            <div class="top-head-left">
+                                <a href="#">
+                                    <img src="images/logo.png" alt="Logo">
                                 </a>
-                                <ul>
-                                    <li><a href="#">Thông tin chung</a></li>
-                                    <li><a href="#">Tổ chức</a></li>
-                                    <li><a href="#">Nhân sự</a></li>
-                                    <li><a href="#">Đối tác</a></li>
-                                    <li><a href="#">Dịch vụ</a></li>
-                                    <li><a href="#">Liên hệ</a></li>
-                                    <li><a href="#">Liên kết website</a></li>
+                            </div>
+                            <div class="top-head-right flex">
+                                <div class="info">
+                                    <span class="phone">(028) 3724 2181 (ext. 1415)</span>
+                                    <span class="mail">ttkt@vnuhcm.edu.vn</span>
+                                </div>
+                                <div class="search">
+                                    <img src="images/search.png" alt="search">
+                                    <form action="" method="get">
+                                        <input type="text" placeholder="Tìm kiếm..." />
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav id="main-menu">
+                    <div class="container">
+                        <a class="panel-a menu-mo" href="#menumobile" data-position="true" data-type="false">
+                            <svg height="1792" viewBox="0 0 1792 1792" width="1792" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1664 1344v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45zm0-512v128q0 26-19 45t-45 19h-1408q-26 0-45-19t-19-45v-128q0-26 19-45t45-19h1408q26 0 45 19t19 45z" />
+                            </svg>
+                            Menu
+                        </a>
+                        <div class="flex justify-between items-center">
+                            <div class="main-nav">
+                                <ul class="reset-liststyle flex">
+                                    <li><a href="#">Trang chủ</a></li>
+                                    <li><a href="#">Bảo đảm chất lượng</a></li>
+                                    <li><a href="#">Đánh giá năng lực</a></li>
+                                    <li><a href="#">VNU-EPT</a></li>
+                                    <li><a href="#">Đánh giá MOOCs</a></li>
                                 </ul>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <main id="main-body">
-        <div class="sub-banner">
-            <div class="sub-info text-center">
-                <h1 class="font-condensed">Bảo đảm chất lượng</h1>
-                <p>Nâng cao chất lượng đào tạo thông qua các hoạt động đánh giá, kiểm định và cải tiến liên tục.</p>
-            </div>
-            <div class="container relative" style="margin-bottom: 115px;"> <!-- tạm để style inline -> script -->
-                <div class="about-category flex flex-wrap justify-center">
-                    <div class="about-category-wrap flex flex-wrap items-end">
-                        <div class="item active">
-                            <a class="text-center flex flex-wrap items-center justify-center" href="#">
-                                <img src="images/cab-1.png" alt="Cate 1">
-                                <h2 class="font-condensed">Giới thiệu</h2>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a class="text-center flex flex-wrap items-center justify-center" href="#">
-                                <img src="images/cab-2.png" alt="Cate 1">
-                                <h2 class="font-condensed">Tài nguyên số</h2>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a class="text-center flex flex-wrap items-center justify-center" href="#">
-                                <img src="images/cab-3.png" alt="Cate 1">
-                                <h2 class="font-condensed">Kết quả<br>Kiểm định - xếp hạng</h2>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a class="text-center flex flex-wrap items-center justify-center" href="#">
-                                <img src="images/cab-4.png" alt="Cate 1">
-                                <h2 class="font-condensed">Phát triển bền vững</h2>
-                            </a>
+                            </div>
+                            <div class="dropdown-nav">
+                                <ul class="reset-liststyle">
+                                    <li>
+                                        <a class="flex items-center" href="#">
+                                            Về trung tâm
+                                            <svg style="margin-left: 5px;" xmlns="http://www.w3.org/2000/svg" width="16"
+                                                height="16" fill="currentColor" class="bi bi-caret-down-fill"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                                            </svg>
+                                        </a>
+                                        <ul>
+                                            <li><a href="#">Thông tin chung</a></li>
+                                            <li><a href="#">Tổ chức</a></li>
+                                            <li><a href="#">Nhân sự</a></li>
+                                            <li><a href="#">Đối tác</a></li>
+                                            <li><a href="#">Dịch vụ</a></li>
+                                            <li><a href="#">Liên hệ</a></li>
+                                            <li><a href="#">Liên kết website</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="main-about mgb-30">
-            <div class="container">
-                <div class="flex wrap-w">
-                    <div class="w-3/12 w-pad">
-                        <div class="about-aside">
-                            <ul class="reset-liststyle font-condensed">
-                                <li class="active"><a href="#">Giới thiệu chung</a></li>
-                                <li><a href="#">Hệ thống đảo bảo chất lượng</a></li>
-                                <li><a href="#">Quá trình phát triển</a></li>
-                                <li><a href="#">Định hướng chiến lược</a></li>
-                            </ul>
+                </nav>
+            </header>
+            <main id="main-body">
+                <div class="sub-banner">
+                    <div class="sub-info text-center">
+                        <h1 class="font-condensed">Bảo đảm chất lượng</h1>
+                        <p>Nâng cao chất lượng đào tạo thông qua các hoạt động đánh giá, kiểm định và cải tiến liên tục.
+                        </p>
+                    </div>
+                    <div class="container relative" style="margin-bottom: 115px;">
+                        <!-- tạm để style inline -> script -->
+                        <div class="about-category flex flex-wrap justify-center">
+                            <div class="about-category-wrap flex flex-wrap items-end">
+                                <div class="item active">
+                                    <a class="text-center flex flex-wrap items-center justify-center" href="#">
+                                        <img src="images/cab-1.png" alt="Cate 1">
+                                        <h2 class="font-condensed">Giới thiệu</h2>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a class="text-center flex flex-wrap items-center justify-center" href="#">
+                                        <img src="images/cab-2.png" alt="Cate 1">
+                                        <h2 class="font-condensed">Tài nguyên số</h2>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a class="text-center flex flex-wrap items-center justify-center" href="#">
+                                        <img src="images/cab-3.png" alt="Cate 1">
+                                        <h2 class="font-condensed">Kết quả<br>Kiểm định - xếp hạng</h2>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a class="text-center flex flex-wrap items-center justify-center" href="#">
+                                        <img src="images/cab-4.png" alt="Cate 1">
+                                        <h2 class="font-condensed">Phát triển bền vững</h2>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="w-9/12 w-pad">
-                        <div class="title-b-bottom">
-                            <h3 class="font-condensed">Giới thiệu chung</h3>
-                        </div>
-                        <div class="wrap-content">
-                            Content...
+                </div>
+                <div class="main-about mgb-30">
+                    <div class="container">
+                        <div class="flex wrap-w">
+                            <div class="w-3/12 w-pad">
+                                <div class="about-aside">
+                                    <ul class="reset-liststyle font-condensed">
+                                        <li class="active"><a href="#">Giới thiệu chung</a></li>
+                                        <li><a href="#">Hệ thống đảo bảo chất lượng</a></li>
+                                        <li><a href="#">Quá trình phát triển</a></li>
+                                        <li><a href="#">Định hướng chiến lược</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="w-9/12 w-pad">
+                                <div class="title-b-bottom">
+                                    <h3 class="font-condensed">Giới thiệu chung</h3>
+                                </div>
+                                <div class="wrap-content">
+                                    Content...
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </main>
-    <footer id="main-footer">
-        <div class="container">
-            <div class="flex wrap-w">
-                <div class="w-6/12 w-pad">
-                    <h1>TRUNG TÂM KHẢO THÍ & ĐÁNH GIÁ CHẤT LƯỢNG ĐÀO TẠO</h1>
-                    <span>Đơn vị uy tín hàng đầu trong lĩnh vực Khảo thí và Đánh giá Chất lượng Giáo dục.</span>
-                    <div class="mgb-30"></div>
-                    <ul class="reset-liststyle ul-address">
-                        <li>Phòng 403, Nhà điều hành ĐHQG-HCM, đường Võ Trường Toản, Khu phố 33, phường Linh Xuân, Thành phố Hồ Chí Minh.</li>
-                        <li>(028) 3724 2181 (ext. 1415)</li>
-                        <li>ttkt@vnuhcm.edu.vn</li>
-                        <li>www.cetqa.vnuhcm.edu.vn</li>
-                    </ul>
-                </div>
-                <div class="w-6/12 w-pad">
-                    <div class="mgb-30"></div>
+            </main>
+            <footer id="main-footer">
+                <div class="container">
                     <div class="flex wrap-w">
-                        <div class="w-4/12 w-pad">
-                            <h4>Liên kết nhanh</h4>
-                            <ul class="reset-liststyle ul-list">
-                                <li><a href="#">ĐHQG-HCM</a></li>
-                                <li><a href="#">Thi đánh giá năng lực</a></li>
-                                <li><a href="#">VNU-EPT</a></li>
+                        <div class="w-6/12 w-pad">
+                            <h1>TRUNG TÂM KHẢO THÍ & ĐÁNH GIÁ CHẤT LƯỢNG ĐÀO TẠO</h1>
+                            <span>Đơn vị uy tín hàng đầu trong lĩnh vực Khảo thí và Đánh giá Chất lượng Giáo dục.</span>
+                            <div class="mgb-30"></div>
+                            <ul class="reset-liststyle ul-address">
+                                <li>Phòng 403, Nhà điều hành ĐHQG-HCM, đường Võ Trường Toản, Khu phố 33, phường Linh
+                                    Xuân, Thành phố Hồ Chí Minh.</li>
+                                <li>(028) 3724 2181 (ext. 1415)</li>
+                                <li>ttkt@vnuhcm.edu.vn</li>
+                                <li>www.cetqa.vnuhcm.edu.vn</li>
                             </ul>
                         </div>
-                        <div class="w-8/12 w-pad">
-                            <h4>Dịch vụ</h4>
-                            <ul class="reset-liststyle ul-list">
-                                <li><a href="#">Tư vấn, tập huấn công tác khảo thí</a></li>
-                                <li><a href="#">Tư vấn, tập huấn bảo đảm chất lượng và xếp hạng</a></li>
-                                <li><a href="#">Tư vấn xây dựng chương trình đào tạo</a></li>
-                                <li><a href="#">Tư vấn đánh giá chuẩn đầu ra</a></li>
-                            </ul>
+                        <div class="w-6/12 w-pad">
+                            <div class="mgb-30"></div>
+                            <div class="flex wrap-w">
+                                <div class="w-4/12 w-pad">
+                                    <h4>Liên kết nhanh</h4>
+                                    <ul class="reset-liststyle ul-list">
+                                        <li><a href="#">ĐHQG-HCM</a></li>
+                                        <li><a href="#">Thi đánh giá năng lực</a></li>
+                                        <li><a href="#">VNU-EPT</a></li>
+                                    </ul>
+                                </div>
+                                <div class="w-8/12 w-pad">
+                                    <h4>Dịch vụ</h4>
+                                    <ul class="reset-liststyle ul-list">
+                                        <li><a href="#">Tư vấn, tập huấn công tác khảo thí</a></li>
+                                        <li><a href="#">Tư vấn, tập huấn bảo đảm chất lượng và xếp hạng</a></li>
+                                        <li><a href="#">Tư vấn xây dựng chương trình đào tạo</a></li>
+                                        <li><a href="#">Tư vấn đánh giá chuẩn đầu ra</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <p class="copyright text-center">© 2025 Bản quyền thuộc về Trung tâm Khảo thí và Đánh giá Chất lượng Đào
+                    tạo.</p>
+            </footer>
+        </div>
+        <!--menumobile-->
+        <div id="menumobile" class="mobile-panel mobilep-left">
+            <div class="menu-in">
+                <div class="menu-mobile">
+                    <div class="logo">
+                        <a href="#"><img class="w-full" src="images/logo.png" alt="Logo"></a>
+                    </div>
+                    <ul id="menuMobiles" class="menu-nav"></ul>
+                </div>
             </div>
         </div>
-        <p class="copyright text-center">© 2025 Bản quyền thuộc về Trung tâm Khảo thí và Đánh giá Chất lượng Đào tạo.</p>
-    </footer>
+        <!--menumobile-->
+    </div>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.panel.mobile.js"></script>
     <script src="js/site.js"></script>
 </body>
+
 </html>
